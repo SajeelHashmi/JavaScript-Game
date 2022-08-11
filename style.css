@@ -1,0 +1,103 @@
+ :root{
+    --huecolor:50;
+     --backgroudColorVar:hsl(var(--huecolor), 0%, 0%);
+} 
+*{
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+}
+
+div.start{
+    
+    height: 100%;
+    width: 100%;
+}
+button:hover{
+    background-color: red;
+}
+button{
+    border: 1px white solid;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    transition: background-color .3s ease-out;
+    background-color:#03038b;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+
+}
+#game{
+    display:none;
+}
+div.result {
+    display: none;
+
+}
+
+#level,#score,h1,#HS,#vel{
+   
+    text-align: center;
+    font-size: 1.5rem;
+    opacity: 0.5;
+    margin: 5px;
+    font-weight: bold;
+}
+#vel{
+    position: absolute;
+    top:2% ;
+    left: 2%;
+}
+body{
+    overflow: hidden;
+    margin: 0;
+    background-color:var(--backgroudColorVar);
+
+}
+/* #HS{
+float: right;
+} */
+#square{ 
+    --size:300;
+    --posX:50;
+    --posY:50;
+    position: absolute;
+    display: block;
+    background-color: var(--backgroudColorVar);
+    border:5px rgb(255, 255, 255) solid;
+   height: calc(var(--size)*1px);
+    width:calc(var(--size)*1px);
+    top: calc(var(--posY) * 1%);
+    left: calc(var(--posX) * 1%);
+    transform: translateX(-50%) translateY(-50%);
+    
+}
+#ball{
+    --posBallX:50;
+    --posBallY:50;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    top: calc(var(--posBallY) * 1%);
+    left: calc(var(--posBallX) * 1%);
+    transform: translateX(-50%) translateY(-50%);
+
+}
+
+#power-up{
+    
+    display: none;
+    --x:80;
+    --y:70;
+    position: absolute;
+    background-color: red;
+    height: 25px;
+    width: 25px;
+    top: calc(var(--x) * 1%);
+    left: calc(var(--y) * 1%);
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 50%;
+    border:  solid rgb(89, 88, 88) 2px ;
+}
