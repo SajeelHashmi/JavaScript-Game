@@ -6,7 +6,7 @@ A very simple game with the objectve to keep a ball inside a square the ball mov
 ## Screenshots
 
 ![start](./screenshots/Start.png)
-![Game](./screenshots/Game%20Play.png)
+![Game](./screenshots/GamePlay.png)
 ![Power up](./screenshots/powerUp.png)
 
 
