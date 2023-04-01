@@ -5,6 +5,15 @@ game pause implemented now bavkground music if wanted
 */
 
 
+//color change code
+// let color = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--huecolor"))
+// function colorChange()
+// {
+//     color+=10
+//     document.documentElement.style.setProperty('--huecolor', color);
+// }
+
+
 const INITIAL_VELOCITY=0.015
 const VELOCITY_INCREASE=0.010
 const showVelocity=document.getElementById("vel")
@@ -235,7 +244,9 @@ start[1].addEventListener("click",startGame)
 const sqElem= new square(document.getElementById("square"))
 function startGame()
 {       
-    
+    setInterval(() => {
+        colorChange()
+    }, 100);
     backgroundMusic.sound.loop=true;
     backgroundMusic.sound.volume=0.5;
     backgroundMusic.play()
