@@ -8,3 +8,5 @@ A very simple game with the objectve to keep a ball inside a square the ball mov
 ![start](./screenshots/Start.png)
 ![Game](./screenshots/GamePlay.png)
 ![Power up](./screenshots/powerUp.png)
+
+you can play [here](https://sajeelhashmi.github.io/game/)
